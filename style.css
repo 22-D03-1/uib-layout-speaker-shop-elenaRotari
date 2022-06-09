@@ -39,6 +39,12 @@ body {
 .navContainer i {
   font-size: 2rem;
 }
+.navContainer i:active {
+  display: none;
+}
+.navContainer i:active ~ a {
+  display: block;
+}
 
 .navContainer nav a {
   text-decoration: none;
@@ -51,7 +57,7 @@ body {
 
 .middleContainer h1 {
   font-weight: 500;
-  font-size: 1.7rem;
+
   padding-bottom: 2rem;
 }
 .middleContainer h2 {
@@ -133,9 +139,9 @@ footer div {
   display: flex;
   color: #444;
   justify-content: center;
-  padding: 1.5rem 0;
+  padding: calc(1.5rem + 2vw) 0;
 }
-@media (min-width: 40em) {
+@media (min-width: 60em) {
   .navContainer nav a {
     display: flex;
   }
