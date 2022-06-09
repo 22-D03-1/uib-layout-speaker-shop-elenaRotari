@@ -76,9 +76,12 @@ body {
   padding: 0.5rem;
   align-self: flex-end;
 }
+/* .button p {
+  font-size: calc(0.5rem + 2vw);
+} */
 
 .button img {
-  width: 24px;
+  width: calc(0.5rem + 2vw);
 }
 .imagesBlock > div > p {
   font-size: calc(1rem + 2vw);
